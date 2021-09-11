@@ -1,0 +1,48 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: red; }
+
+#container {
+  width: 680px; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+nav li {
+  display: inline-block; }
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none; }
+
+div h3 {
+  font: 0.83333em; }
+
+div h4 {
+  font: 0.625em; }
+
+div h5 {
+  font: 0.5em; }
+
+div h6 {
+  font: 0.41667em; }
+
+.btn--twitter {
+  background-color: #55acee;
+  border: #55acee; }
+
+.btn--facebook {
+  background-color: #3a5795;
+  border: #3a5795; }
+
+.btn--mail {
+  background-color: #C25E30;
+  border: #C25E30; }
+
+.btn--instagram {
+  background-color: #8f348f;
+  border: #8f348f; }

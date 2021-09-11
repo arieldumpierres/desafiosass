@@ -1,0 +1,64 @@
+// VARIABLES
+
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+}
+
+#container {
+  width: $myWidth;
+}
+
+
+//NESTING
+
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+  }
+
+  //BUCLE
+ 
+@for $i from 3 through 6 {
+    div{ h#{$i} { 
+        font: 2.5em /$i ;
+    }
+   }
+  }
+
+  //MAPS
+ 
+$colores:(
+    /* clave: valor*/
+    twitter: #55acee,
+    facebook:  #3a5795,
+    mail: #C25E30,
+    instagram: rgb(143, 52, 143)
+    );
+    //MAPS con each
+@each $name-color, $bgcolor in $colores {
+    .btn--#{$name-color} {
+        background-color: $bgcolor;
+        border: $bgcolor;
+    }
+ }
+
+
+
